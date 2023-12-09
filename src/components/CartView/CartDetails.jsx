@@ -20,7 +20,7 @@ const CartDetails = ({movedata, datadelete, setdataDelete}) => {
     })
     .then(result => {
       if(result.isConfirmed){
-        fetch(`https://ecombackend-production-1c34.up.railway.app/cartview/${id}`,{
+        fetch(`https://brand-shopserve-side.vercel.app//cartview/${id}`,{
           method: 'DELETE'
         })
         .then(res => res.json())

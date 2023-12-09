@@ -10,14 +10,14 @@ const AppleCard = () => {
     const {categories, brandname , photo , name , price,_id} = data;
     
     useEffect(() => {
-        fetch('https://ecombackend-production-1c34.up.railway.app/mobiles/applem/65311b4ce5a2cb5ec7ab4580')
+        fetch('https://brand-shopserve-side.vercel.app//mobiles/applem/65311b4ce5a2cb5ec7ab4580')
         .then(res => res.json())
         .then(data => setData(data))
         .catch(error => console.error('Error fetching data', error));
     }, [])
 
     const handleAddtocart = () => {
-      fetch('https://ecombackend-production-1c34.up.railway.app/cartview', {
+      fetch('https://brand-shopserve-side.vercel.app//cartview', {
           method: 'POST',
           headers: {
             'Content-Type' : 'application/json'

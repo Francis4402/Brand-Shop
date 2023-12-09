@@ -6,7 +6,7 @@ const Gamdiasheadphone = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch('https://ecombackend-production-1c34.up.railway.app/headphones/gamdiasH')
+        fetch('https://brand-shopserve-side.vercel.app//headphones/gamdiasH')
         .then(res => res.json())
         .then(data => setData(data))
         .catch(error => console.error('Error fetching data', error));

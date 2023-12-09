@@ -23,7 +23,7 @@ const Displayrealme = ({movedata, datadelete, setdataDelete}) => {
       })
       .then(result => {
         if(result.isConfirmed){
-          fetch(`https://ecombackend-production-1c34.up.railway.app/mobiles/realmem/${productId}`,{
+          fetch(`https://brand-shopserve-side.vercel.app//mobiles/realmem/${productId}`,{
             method: 'DELETE'
           })
           .then(res => res.json())
@@ -44,7 +44,7 @@ const Displayrealme = ({movedata, datadelete, setdataDelete}) => {
     }
 
     const handleAddtocart = () => {
-      fetch('https://ecombackend-production-1c34.up.railway.app/cartview', {
+      fetch('https://brand-shopserve-side.vercel.app//cartview', {
           method: 'POST',
           headers: {
             'Content-Type' : 'application/json'

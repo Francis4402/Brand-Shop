@@ -10,14 +10,14 @@ const Headphonecard = () => {
     const {categories, brandname , photo , name , price,_id} = data;
     
     useEffect(() => {
-        fetch('https://ecombackend-production-1c34.up.railway.app/headphones/havitH/65328a99be0533278251d844')
+        fetch('https://brand-shopserve-side.vercel.app//headphones/havitH/65328a99be0533278251d844')
         .then(res => res.json())
         .then(data => setData(data))
         .catch(error => console.error('Error fetching data', error));
     }, [])
 
     const handleAddtocart = () => {
-      fetch('https://ecombackend-production-1c34.up.railway.app/cartview', {
+      fetch('https://brand-shopserve-side.vercel.app//cartview', {
           method: 'POST',
           headers: {
             'Content-Type' : 'application/json'

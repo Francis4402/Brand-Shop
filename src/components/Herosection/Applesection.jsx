@@ -7,7 +7,7 @@ const Applesection = () => {
     const [data, setData] = useState([]);
     
     useEffect(() => {
-        fetch('https://ecombackend-production-1c34.up.railway.app/mobiles/applem')
+        fetch('https://brand-shopserve-side.vercel.app//mobiles/applem')
         .then(res => res.json())
         .then(data => setData(data))
         .catch(error => console.error('Error fetching data', error));

@@ -23,7 +23,7 @@ const Displaynokiaphone = ({movedata, datadelete, setdataDelete}) => {
       })
       .then(result => {
         if(result.isConfirmed){
-          fetch(`https://ecombackend-production-1c34.up.railway.app/mobiles/nokiam/${productId}`,{
+          fetch(`https://brand-shopserve-side.vercel.app//mobiles/nokiam/${productId}`,{
             method: 'DELETE'
           })
           .then(res => res.json())
@@ -44,7 +44,7 @@ const Displaynokiaphone = ({movedata, datadelete, setdataDelete}) => {
     }
 
     const handleAddtocart = () => {
-      fetch('https://ecombackend-production-1c34.up.railway.app/cartview', {
+      fetch('https://brand-shopserve-side.vercel.app//cartview', {
           method: 'POST',
           headers: {
             'Content-Type' : 'application/json'

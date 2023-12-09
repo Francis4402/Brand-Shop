@@ -22,7 +22,7 @@ const AddProduct = () => {
 
         const newProduct = {name, brandname, categories, price, shortdescription, rating, photo}
 
-        const baseUrl = 'https://ecombackend-production-1c34.up.railway.app/';
+        const baseUrl = 'https://brand-shopserve-side.vercel.app//';
         const url = `${baseUrl}${category}${brandname ? '/' + brandname : ''}`;
 
         fetch(url, {

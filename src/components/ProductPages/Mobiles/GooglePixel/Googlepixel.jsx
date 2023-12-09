@@ -6,7 +6,7 @@ const Googlepixel = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch('https://ecombackend-production-1c34.up.railway.app/mobiles/googlem')
+        fetch('https://brand-shopserve-side.vercel.app//mobiles/googlem')
         .then(res => res.json())
         .then(data => setData(data))
         .catch(error => console.error('Error fetching data', error));
