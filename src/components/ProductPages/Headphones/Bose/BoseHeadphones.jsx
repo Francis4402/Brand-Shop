@@ -18,7 +18,7 @@ const BoseHeadphones = () => {
             <title>Brand-Shop | BoseHeadphones</title>
             <meta name="description" content="Helmet application" />
         </Helmet>
-        <div className="container text-center justify-center grid">
+        <div className="containe text-center justify-center grid">
             <h1 className="text-3xl font-bold p-10">Bose Headphones</h1>
             {
                 data.length === 0 ? (
