@@ -7,7 +7,7 @@ const Razerheadphones = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch('https://brand-shopserve-side.vercel.app//headphones/razerH')
+        fetch('https://brand-shopserve-side-francisms-projects.vercel.app/headphones/razerH')
         .then(res => res.json())
         .then(data => setData(data))
         .catch(error => console.error('Error fetching data', error));

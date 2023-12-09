@@ -23,7 +23,7 @@ const Displayrealme = ({movedata, datadelete, setdataDelete}) => {
       })
       .then(result => {
         if(result.isConfirmed){
-          fetch(`https://brand-shopserve-side.vercel.app//mobiles/realmem/${productId}`,{
+          fetch(`https://brand-shopserve-side-francisms-projects.vercel.app/mobiles/realmem/${productId}`,{
             method: 'DELETE'
           })
           .then(res => res.json())
@@ -44,7 +44,7 @@ const Displayrealme = ({movedata, datadelete, setdataDelete}) => {
     }
 
     const handleAddtocart = () => {
-      fetch('https://brand-shopserve-side.vercel.app//cartview', {
+      fetch('https://brand-shopserve-side-francisms-projects.vercel.app/cartview', {
           method: 'POST',
           headers: {
             'Content-Type' : 'application/json'

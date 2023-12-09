@@ -8,7 +8,7 @@ const SamsungMobiles = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch('https://brand-shopserve-side.vercel.app//mobiles/samsungm')
+        fetch('https://brand-shopserve-side-francisms-projects.vercel.app/mobiles/samsungm')
         .then(res => res.json())
         .then(data => setData(data))
         .catch(error => console.error('Error fetching data', error));

@@ -28,7 +28,7 @@ const Navbar = () => {
   const [data, setData] = useState([]);
 
     useEffect(() => {
-      const fetchdata = async () => await fetch('https://brand-shopserve-side.vercel.app//cartview')
+      const fetchdata = async () => await fetch('https://brand-shopserve-side-francisms-projects.vercel.app/cartview')
         
         .then(res => res.json())
         .then((data) => {

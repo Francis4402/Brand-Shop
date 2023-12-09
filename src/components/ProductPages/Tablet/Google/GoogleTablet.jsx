@@ -6,7 +6,7 @@ const GoogleTablet = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch('https://brand-shopserve-side.vercel.app//tablet/googlet')
+        fetch('https://brand-shopserve-side-francisms-projects.vercel.app/tablet/googlet')
         .then(res => res.json())
         .then(data => setData(data))
         .catch(error => console.error('Error fetching data', error));

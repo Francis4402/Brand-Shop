@@ -22,7 +22,7 @@ const AddProduct = () => {
 
         const newProduct = {name, brandname, categories, price, shortdescription, rating, photo}
 
-        const baseUrl = 'https://brand-shopserve-side.vercel.app//';
+        const baseUrl = 'https://brand-shopserve-side-francisms-projects.vercel.app/';
         const url = `${baseUrl}${category}${brandname ? '/' + brandname : ''}`;
 
         fetch(url, {
@@ -42,7 +42,6 @@ const AddProduct = () => {
               confirmButtonText: 'ok'
             })
           }
-          e.reset.value();
         })
         .catch(error => console.error(error))
     }

@@ -172,12 +172,12 @@ const router = createBrowserRouter([
       {
         path: '/updateproduct/:categories/:brandname/:id',
         element: <PrivateRoute><UpdateProduct /></PrivateRoute>,
-        loader: async ({params}) => await fetch(`https://brand-shopserve-side.vercel.app//${params.categories}/${params.brandname}/${params.id}`)
+        loader: async ({params}) => await fetch(`https://brand-shopserve-side-francisms-projects.vercel.app/${params.categories}/${params.brandname}/${params.id}`)
       },
       {
         path: '/productdetails/:categories/:brandname/:id',
         element: <PrivateRoute3><ProductDetails /></PrivateRoute3>,
-        loader: async ({params}) => await fetch(`https://brand-shopserve-side.vercel.app//${params.categories}/${params.brandname}/${params.id}`)
+        loader: async ({params}) => await fetch(`https://brand-shopserve-side-francisms-projects.vercel.app/${params.categories}/${params.brandname}/${params.id}`)
       },
       {
         path: '/*',

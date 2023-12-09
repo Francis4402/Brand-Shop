@@ -24,7 +24,7 @@ const DisplayAppleTablet = ({movedata, datadelete, setdataDelete}) => {
       })
       .then(result => {
         if(result.isConfirmed){
-          fetch(`https://brand-shopserve-side.vercel.app//tablet/applet/${productId}`,{
+          fetch(`https://brand-shopserve-side-francisms-projects.vercel.app/tablet/applet/${productId}`,{
             method: 'DELETE'
           })
           .then(res => res.json())
@@ -45,7 +45,7 @@ const DisplayAppleTablet = ({movedata, datadelete, setdataDelete}) => {
     }
 
     const handleAddtocart = () => {
-      fetch('https://brand-shopserve-side.vercel.app//cartview', {
+      fetch('https://brand-shopserve-side-francisms-projects.vercel.app/cartview', {
           method: 'POST',
           headers: {
             'Content-Type' : 'application/json'

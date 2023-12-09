@@ -10,14 +10,14 @@ const TabletCard = () => {
     const {categories, brandname , photo , name , price,_id} = data;
     
     useEffect(() => {
-        fetch('https://brand-shopserve-side.vercel.app//tablet/applet/653288c4be0533278251d838')
+        fetch('https://brand-shopserve-side-francisms-projects.vercel.app/tablet/applet/6574acc8243a3c40d7bc0c46')
         .then(res => res.json())
         .then(data => setData(data))
         .catch(error => console.error('Error fetching data', error));
     }, [])
 
     const handleAddtocart = () => {
-      fetch('https://brand-shopserve-side.vercel.app//cartview', {
+      fetch('https://brand-shopserve-side-francisms-projects.vercel.app/cartview', {
           method: 'POST',
           headers: {
             'Content-Type' : 'application/json'

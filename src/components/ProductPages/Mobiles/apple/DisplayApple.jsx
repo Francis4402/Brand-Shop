@@ -22,7 +22,7 @@ const DisplayApple = ({movedata, datadelete, setdataDelete}) => {
     })
     .then(result => {
       if(result.isConfirmed){
-        fetch(`https://brand-shopserve-side.vercel.app//mobiles/applem/${productId}`,{
+        fetch(`https://brand-shopserve-side-francisms-projects.vercel.app/mobiles/applem/${productId}`,{
           method: 'DELETE'
         })
         .then(res => res.json())
@@ -43,7 +43,7 @@ const DisplayApple = ({movedata, datadelete, setdataDelete}) => {
   }
 
   const handleAddtocart = () => {
-    fetch('https://brand-shopserve-side.vercel.app//cartview', {
+    fetch('https://brand-shopserve-side-francisms-projects.vercel.app/cartview', {
         method: 'POST',
         headers: {
           'Content-Type' : 'application/json'
