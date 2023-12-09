@@ -7,8 +7,8 @@ const Cartview = () => {
   const [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch('https://ecombackend-production-1c34.up.railway.app/cartview')
-        .then(result => result.json())
+        fetch('https://ecombackend-production-1c34.up.railway.app/cartviews')
+        .then(res => res.json())
         .then(data => setData(data))
         .catch(error => console.error('Error fetching data', error));
     }, [])
