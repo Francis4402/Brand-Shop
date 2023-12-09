@@ -29,7 +29,10 @@ const Authprovider = ({children}) => {
         })
     }
 
-    
+    const signwithGoogle = () => {
+        return signInWithPopup(auth, googleProvider);
+    }
+
     const signInUser = (email, password) => {
         return signInWithEmailAndPassword(auth, email, password)
     }
