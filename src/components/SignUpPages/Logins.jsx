@@ -79,7 +79,7 @@ const Logins = () => {
 
                             <span onClick={() => setShowPassword(!showPassword)} className='btn'>
                                 {
-                                    
+                                    showPassword ? <FaEyeSlash /> : <FaEye />
                                 }
                             </span>
                         </div>
